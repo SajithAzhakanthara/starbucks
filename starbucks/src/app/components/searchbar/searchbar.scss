@@ -1,0 +1,17 @@
+@import "../../bootstrap-imports";
+
+.searchbar {
+    width:265px;
+    input {
+        padding-left: 35px;
+        &::-webkit-input-placeholder {
+            font-size: 10px;
+            color:$gray-500;    
+        }
+    }
+    span {
+        left:8px;
+        top:50%;
+        transform: translateY(-50%);
+    }
+}

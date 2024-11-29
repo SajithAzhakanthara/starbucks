@@ -1,0 +1,47 @@
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-color": (
+      property: background-color,
+      class: bg,
+      responsive: true,
+      state:hover,
+      values:(
+        green-800:$green-800,
+      )
+    ),
+    "color":(
+        property:color,
+        class:text,
+        responsive:true,
+        state:hover,
+        values:(
+            gray-500:$gray-500,
+        )
+    ),
+    "font-size":(
+        property:font-size,
+        class:fs,
+        responsive:true,
+        state:hover,
+        values:(14px,20px)
+    ),
+    "font-weight":(
+        property:font-weight,
+        class:'fw',
+        responsive:true,
+        state:hover,
+        values:(100,200,300,400,500,600,700,800,900)
+    ),
+    "text-decoration":(
+        property:text-decoration,
+        class:text-decoration,
+        responsive:true,
+        state:hover,
+        values:(none,underline)
+    )
+  )
+);
+
+@import "bootstrap/scss/utilities/api";
