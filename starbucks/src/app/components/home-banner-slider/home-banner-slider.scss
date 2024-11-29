@@ -1,0 +1,42 @@
+@import "../../bootstrap-imports";
+
+.home-banner-slider {
+    .carousel-item {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .carousel-control-prev-icon {
+        background-image: none;
+    }
+    .carousel-control-next-icon {
+        background-image: none;
+    }
+    .carousel-control-prev {
+        opacity:1;
+        width:35px;
+        height:35px;
+        border-radius: 50%;
+        background-color:$white;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        left:-15px;
+        border:1px solid $gray-500;
+        top:50%;
+        transform:translateY(-50%)
+    }
+    .carousel-control-next {
+        opacity:1;
+        width:35px;
+        height:35px;
+        border-radius: 50%;
+        background-color:$white;
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        right:-15px;
+        border:1px solid $gray-500;
+        top:50%;
+        transform:translateY(-50%)
+    }
+}
