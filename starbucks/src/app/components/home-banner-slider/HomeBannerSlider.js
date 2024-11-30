@@ -11,7 +11,7 @@ const HomeBannerSlider = () => {
                         HomeBannerData.map((item,index)=>{
                             return(
                                 <div className={`carousel-item p-4 rounded-2 ${index == 0 && 'active'}`} key={index} style={{backgroundImage:`url(${item.background})`}}>
-                                    <div className="d-flex justify-content-between align-items-end">
+                                    <div className="d-flex justify-content-between align-items-md-end align-items-start flex-md-row flex-column">
                                         <div className="d-flex gap-4">
                                             <div>
                                                 <img src={item.image} style={{width:'100px'}}/>

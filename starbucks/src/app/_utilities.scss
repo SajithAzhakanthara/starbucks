@@ -8,6 +8,8 @@ $utilities: map-merge(
       responsive: true,
       state:hover,
       values:(
+        green-100:$green-100,
+        green-200:$green-200,
         green-800:$green-800,
       )
     ),
@@ -20,6 +22,7 @@ $utilities: map-merge(
             gray-500:$gray-500,
 
             green-800:$green-800,
+            green-500:$green-500,
         )
     ),
     "font-size":(
@@ -27,7 +30,7 @@ $utilities: map-merge(
         class:fs,
         responsive:true,
         state:hover,
-        values:(14px,20px)
+        values:(10px,12px,14px,18px,20px,24px,28px)
     ),
     "font-weight":(
         property:font-weight,
@@ -42,6 +45,27 @@ $utilities: map-merge(
         responsive:true,
         state:hover,
         values:(none,underline)
+    ),
+    "list-style":(
+      property:list-style,
+      class:list-style,
+      responsive:true,
+      state:hover,
+      values:(none)
+    ),
+    "object-fit":(
+      property:object-fit,
+      class:object-fit,
+      responsive:true,
+      state:hover,
+      values:(cover)
+    ),
+    "margin-top":(
+      property:margin-top,
+      class:mt,
+      responsive:true,
+      state:hover,
+      values:(100px)
     )
   )
 );

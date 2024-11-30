@@ -2,6 +2,9 @@
 
 .searchbar {
     width:265px;
+    @media(max-width:1199px){
+        width:180px;
+    }
     input {
         padding-left: 35px;
         &::-webkit-input-placeholder {
