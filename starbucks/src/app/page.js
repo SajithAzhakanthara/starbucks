@@ -6,6 +6,7 @@ import ImageRound from "./components/image-round/ImageRound";
 import RecommendedItems from "./components/recommended-items/RecommendedItems";
 import { MainMenuData } from "@/app/Data/MainMenuData";
 import {RecommendedItemsData} from "@/app/Data/RecommendedItemsData";
+import "@/app/Homepage.scss";
 
 export default function Home() {
   return (
@@ -18,16 +19,16 @@ export default function Home() {
           <HomeBannerSlider/>
         </div>
       </section>
-      <section className="d-none">
+      <section className="">
         <div className="container mt-5">
-            <h4 className="mb-4 fs-24px text-green-800 fw-600">Handcrafted Curations</h4>
-            <div className="d-flex align-items-center justify-content-between">
+            <h4 className="mb-4 fs-md-24px fs-16px text-green-800 fw-600 text-lg-start text-center">Handcrafted Curations</h4>
+            <div className="d-flex flex-wrap align-items-center justify-content-between">
                {
                 MainMenuData.map((item,index)=>{
                   return(
-                    <div className="mb-3" key={index}>
+                    <div className="mb-3 main-menu-items" key={index}>
                         <Link className="d-block text-decoration-none" href={item.href}>
-                          <div>
+                          <div className="text-lg-start text-center">
                             <ImageRound image={item.image}/>
                           </div>
                           <h4 className="mb-0 mt-3 fs-14px fw-500 text-center text-black">{item.title}</h4>
@@ -41,7 +42,7 @@ export default function Home() {
       </section>
       <section className="bg-green-100 mt-5">
         <div className="container py-5">
-          <h4 className="fw-600 text-green-800">Barista Recommends</h4>
+          <h4 className="fw-600 text-green-800 fs-md-24px fs-16px">Barista Recommends</h4>
           <div className="mt-4">
             <div className="row">
               {
@@ -64,7 +65,7 @@ export default function Home() {
       </section>
       <section className="bg-green-100 mt-5 py-5">
         <div className="container">
-          <h4 className="mb-4 fs-24px text-green-800 fw-600">Handcrafted Curations</h4>
+          <h4 className="mb-4  fs-md-24px fs-16px text-green-800 fw-600">Handcrafted Curations</h4>
           <div className="p-4 rounded-2 position-relative overflow-hidden" style={{backgroundImage:'url(/bg/ICW_Live_Event_Day5_41f11ca3d2.jpg)'}}>
               <div className="position-relative" style={{zIndex:'1'}}>
                 <span className="text-green-500 fs-10px d-inline-block px-3 py-1 bg-white rounded-4">Coffee culture</span>

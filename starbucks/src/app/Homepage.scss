@@ -1,0 +1,8 @@
+.main-menu-items {
+    @media(max-width:991px){
+        flex-basis:33.333%;
+    }
+    @media(max-width:767px){
+        flex-basis:50%;
+    }
+}

@@ -124,9 +124,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="d-flex align-items-center justify-content-between py-2" style={{borderTop:'1px solid #ddd'}}>
+                <div className="d-flex align-items-sm-center align-items-start flex-sm-row flex-column justify-content-sm-between justify-content-start py-2" style={{borderTop:'1px solid #ddd'}}>
                     <div>
-                        <ul className="list-style-none m-0 p-0 d-flex align-items-center">
+                        <ul className="list-style-none m-0 p-0 d-flex align-items-sm-center flex-sm-row flex-column align-items-start">
                             <li className="pe-4">
                                 <Link href="#" className="fs-12px text-white text-decoration-none fw-200">Web Accessiblity</Link>
                             </li>

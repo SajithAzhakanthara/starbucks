@@ -12,10 +12,13 @@ const HeaderMobile = () => {
                             <Image src="/store-icon.svg" width="24" height="24" alt="store-icon"/>
                         </Link>
                     </div>
-                    <div>
+                    <div className="d-flex align-items-center gap-3">
                         <Link href="#">
                             <Image src="/account_thick.svg" width="24" height="24" alt="account-icon"/>
                         </Link>
+                        <buttom className="bg-transparent border-0 padding-0">
+                                <i className="bi bi-list fs-24px text-white"></i>
+                        </buttom>
                     </div>
                 </div>
             </div>
