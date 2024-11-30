@@ -13,7 +13,8 @@ const HeaderMenu = () => {
 
     useEffect(()=>{
         setPathName(window.location.pathname);
-    })
+        console.log(window.location.pathname)
+    },[pathname])
 
 
     return(
@@ -22,7 +23,7 @@ const HeaderMenu = () => {
                 headerMenuData.map((item,index) => {
                     return(
                         <li className="px-3" key={index}>
-                            <Link className={`${item.link == pathname && 'active'} position-relative d-inline-block text-black fs-14px`} href={item.link}>{item.name}</Link>
+                            <Link className="position-relative d-inline-block text-black fs-14px" href={item.link}>{item.name}</Link>
                         </li>
                     )
                 })
