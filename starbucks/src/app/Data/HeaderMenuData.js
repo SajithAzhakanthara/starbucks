@@ -13,7 +13,7 @@ export const HeaderMenuData = [
     },
     {
         name:'Pay',
-        link:'/pay'
+        link:'/authentication'
     },
     {
         name:'Store',

@@ -3,6 +3,7 @@ import HeaderMenuContextProvider from "./context/header-menu-context/HeaderMenuC
 import Header from "./components/header/Header";
 import Footer from "@/app/components/footer/Footer";
 import HeaderMobile from "@/app/components/header-mobile/HeaderMobile";
+import LoginRegisterToggleContextProvider from "./context/login-register-toggle-context/LoginRegisterToggleContextProvider";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
 import "./globals.scss";
@@ -15,6 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <HeaderMenuContextProvider>
+      <LoginRegisterToggleContextProvider>
       <html lang="en">
         <body>
           <div className="d-md-block d-none">
@@ -24,10 +26,11 @@ export default function RootLayout({ children }) {
             <HeaderMobile/>
           </div>
           {children}
-          <BootstrapJs/>
           <Footer/>
+          <BootstrapJs/>
         </body>
       </html>
+      </LoginRegisterToggleContextProvider>
     </HeaderMenuContextProvider>
   );
 }

@@ -5,3 +5,9 @@
 body {
     font-family: "Poppins", serif !important;
 }
+
+.login-register-form-wrap {
+    @media(max-width:575px){
+        width:97% !important;
+    }
+}

@@ -1,10 +1,11 @@
 import Image from "next/image";
 import HeaderMenu from "../HeaderMenu/HeaderMenu";
 import Searchbar from "../searchbar/Searchbar";
+import Link from "next/link";
 
 const Header = () => {
     return(
-        <header>
+        <header className="shadow-sm border">
             <div className="container">
                 <div className="d-flex align-items-center justify-content-between py-3">
                     <div className="d-flex align-items-center gap-4">
@@ -22,7 +23,9 @@ const Header = () => {
                             <Searchbar placeholder="Looking for somthing specific"/>
                         </div>
                         <div>
-                            <Image src="/account_thin.svg" width="32" height="32" alt="account"/>
+                            <Link href="/authentication">
+                                <Image src="/account_thin.svg" width="32" height="32" alt="account"/>
+                            </Link>
                         </div>
                     </div>
                 </div>

@@ -1,29 +1,31 @@
-import GiftItem from "@/app/components/gift-item/GiftItem";
-import { GiftItemData } from "../Data/GiftItemData";
-import DatabaseErrorModal from "@/app/components/database-error-modal/DatabaseErrorModal";
 import "./page.scss";
+import OrderItem from "../components/order-item/OrderItem";
+import {OrderItemData} from "@/app/Data/OrderItemData";
+import DatabaseErrorModal from "@/app/components/database-error-modal/DatabaseErrorModal";
 
 
-const GiftPage = () => {
+const OrderPage = () => {
     return(
         <main>
             <section className="py-5 bg-green-800">
                 <div className="container">
-                    <h4 className="fs-24px fw-500 text-white m-0">Gift</h4>
+                    <h4 className="fs-24px fw-500 text-white m-0">Order</h4>
                 </div>
             </section>
             <section className="py-5">
                 <div className="container">
                     <div className="row">
                         {
-                            GiftItemData.map((item,index)=>{
+                            OrderItemData.map((item,index)=>{
                                 return(
-                                    <div className="col-lg-4 col-md-6 mb-4" key={index}>
+                                    <div className="col-lg-4 col-md-6 mb-3">
                                         <div>
-                                            <GiftItem
+                                            <OrderItem
                                             image={item.image}
-                                            title={item.title}
+                                            name={item.name}
                                             description={item.description}
+                                            price={item.price}
+                                            quantity={item.quantity}
                                             />
                                         </div>
                                     </div>
@@ -38,4 +40,4 @@ const GiftPage = () => {
     )
 }
 
-export default GiftPage;
+export default OrderPage;
