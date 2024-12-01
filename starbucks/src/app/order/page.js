@@ -18,7 +18,7 @@ const OrderPage = () => {
                         {
                             OrderItemData.map((item,index)=>{
                                 return(
-                                    <div className="col-lg-4 col-md-6 mb-3">
+                                    <div className="col-lg-4 col-md-6 mb-3" key={index}>
                                         <div>
                                             <OrderItem
                                             image={item.image}
