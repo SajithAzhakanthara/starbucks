@@ -33,7 +33,7 @@ const Register = () => {
                         <input type="password" placeholder="Password" className="form-control bg-white fs-12px" required style={{height:'40px'}}/>
                     </div>
                     <div>
-                        <button className="form-control bg-green-800 text-white fs-13px rounded-3 border-0" style={{height:'40px'}}>Login</button>
+                        <button className="form-control bg-green-800 text-white fs-13px rounded-3 border-0" style={{height:'40px'}}>Sign Up</button>
                     </div>
                     <p className="fs-12px text-green-800 mb-0 mt-3 fw-300">Already have an account? <span className="fw-400 text-decoration-underline" onClick={OnClickHandler} role="button">Login</span></p>
                 </div>
