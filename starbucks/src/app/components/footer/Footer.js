@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="bg-green-800 py-5">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-2 col-md-4">
+                    <div className="col-lg-2 col-md-4 mb-3">
                         <div>
                             <Image src="/logo.png" width="62" height="62" alt="footer-logo"/>
                         </div>

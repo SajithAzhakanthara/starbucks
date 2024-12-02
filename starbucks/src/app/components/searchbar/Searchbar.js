@@ -2,7 +2,7 @@ import './searchbar.scss';
 
 const Searchbar = (props) => {
     return(
-        <div className="searchbar position-relative">
+        <div className="searchbar position-relative" style={{width:'100%'}}>
             <span className="position-absolute">
                 <i className="bi bi-search text-gray-500"></i>
             </span>
