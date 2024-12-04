@@ -2,7 +2,7 @@
 
 A Starbucks website clone built using **Next.js**, **Bootstrap**, **utility classes**, **Context API**, and **SCSS**. This project demonstrates responsive design, state management, and modular styling.
 
-[Click here](https://starbucks-avbmrs9zg-sajithazhakantharas-projects.vercel.app/) to visit the website.
+[Click here](https://starbucks-sajithazhakantharas-projects.vercel.app/) to visit the website.
 
 ---
 
