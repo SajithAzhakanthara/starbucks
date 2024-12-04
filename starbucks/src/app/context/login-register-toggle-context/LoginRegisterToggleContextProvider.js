@@ -10,7 +10,7 @@ const LoginRegisterToggleContextProvider = ({children}) => {
         <LoginRegisterToggleContext.Provider value={{login, setLogin}}>
             {children}
         </LoginRegisterToggleContext.Provider>
-    )
+    );
 }
 
 export default LoginRegisterToggleContextProvider;

@@ -16,7 +16,7 @@ const StorePage = () => {
                         </div>
                         <div>
                         <div className="px-5 text-center pt-5">
-                            <Image src="/gpsOff.svg" width="220" height="220" alt="no-gps-image"/>
+                            <Image className="image-responsive" src="/gpsOff.svg" width="220" height="220" alt="no-gps-image"/>
                         </div>
                         <div className="mt-4">
                            <h4 className="fs-16px mb-2 fw-400 text-center">Sorry! we can't seem to spot you.</h4> 

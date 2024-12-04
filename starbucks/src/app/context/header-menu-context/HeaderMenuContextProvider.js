@@ -12,7 +12,7 @@ const HeaderMenuContextProvider = ({children}) => {
         <HeaderMenuContext.Provider value={{headerMenuData, setHeaderMenuData}}>
             {children}
         </HeaderMenuContext.Provider>
-    )
+    );
 }
 
 export default HeaderMenuContextProvider;

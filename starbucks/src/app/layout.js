@@ -6,6 +6,8 @@ import HeaderMobile from "@/app/components/header-mobile/HeaderMobile";
 import LoginRegisterToggleContextProvider from "./context/login-register-toggle-context/LoginRegisterToggleContextProvider";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.min.css";
+import MobileMenu from "@/app/components/mobile-menu/MobileMenu";
+import HeaderMenuFunctionContextProvider from "./context/header-menu-function-context/HeaderMenuFunctionContextProvider";
 import "./globals.scss";
 
 export const metadata = {
@@ -15,22 +17,27 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <HeaderMenuContextProvider>
-      <LoginRegisterToggleContextProvider>
-      <html lang="en">
-        <body>
-          <div className="d-md-block d-none">
-            <Header/>
-          </div>
-          <div className="d-md-none d-block">
-            <HeaderMobile/>
-          </div>
-          {children}
-          <Footer/>
-          <BootstrapJs/>
-        </body>
-      </html>
-      </LoginRegisterToggleContextProvider>
-    </HeaderMenuContextProvider>
+
+            <html lang="en">
+              <body>
+                <HeaderMenuContextProvider>
+                  <LoginRegisterToggleContextProvider>
+                    <HeaderMenuFunctionContextProvider>
+                            <div className="d-md-block d-none">
+                              <Header/>
+                            </div>
+                            <div className="d-md-none d-block">
+                              <HeaderMobile/>
+                            </div>
+                            {children}
+                            <Footer/>
+                            <MobileMenu/>
+                      </HeaderMenuFunctionContextProvider>
+                    </LoginRegisterToggleContextProvider>
+                  </HeaderMenuContextProvider>
+                <BootstrapJs/>
+              </body>
+            </html>
+
   );
 }
